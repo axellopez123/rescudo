@@ -11,13 +11,13 @@ export default function Navbar() {
             {/* Logo placeholder - using text and basic icon representation */}
             <div className="flex items-center gap-2">
               {/* <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center transform rotate-3 shadow-lg shadow-blue-500/50"> */}
-<div className="w-10 h-10 rounded-lg overflow-hidden shadow-lg shadow-blue-500/50">
+              <div className="w-10 h-10 rounded-lg overflow-hidden shadow-lg shadow-blue-500/50">
                 <img src={logo} alt="" srcset="" />{" "}
               </div>
               <span className="text-white text-2xl font-bold tracking-wider">
                 RESCUDO
               </span>
-                            <span className="text-white text-2xl">
+              <span className="text-white text-2xl">
                 FORTALIX
               </span>
             </div>
@@ -27,13 +27,13 @@ export default function Navbar() {
             <div className="ml-10 flex items-baseline space-x-8">
               <a
                 href="#home"
-                className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors cursor-pointer"
+                className=" bg-gray-800  text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors shadow-lg cursor-pointer"
               >
                 Inicio
               </a>
               <a
                 href="#services"
-                className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors cursor-pointer"
+                className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors shadow-lg cursor-pointer"
               >
                 Servicios
               </a>

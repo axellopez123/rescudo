@@ -25,7 +25,7 @@ export default function Services() {
             title: "Capacitación y Soluciones en Seguridad",
             description: "Programas de capacitación profesional en materia de seguridad, así como la comercialización, renta y mantenimiento de equipo especializado, diseñados para fortalecer la prevención, eficiencia operativa y respuesta ante riesgos específicos.",
             icon: (
-    <GiPoliceOfficerHead className="text-3xl" />
+                <GiPoliceOfficerHead className="text-3xl" />
 
             )
         }
@@ -38,8 +38,7 @@ export default function Services() {
                     <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Nuestros Servicios</h2>
                     <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full"></div>
                     <p className="mt-4 text-slate-600 max-w-2xl mx-auto">
-                        Ofrecemos un portafolio completo de soluciones de seguridad adaptadas a sus necesidades específicas.
-                    </p>
+                        Nos adaptamosde manera precisa a las necesidades específicas de cada cliente. Nuestra empresa se distingue por un enfoque preventivo, profesional y altamente confiable, orientado a la protección efectiva de personas, bienes e instalaciones.                    </p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

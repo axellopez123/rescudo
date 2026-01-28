@@ -1,3 +1,5 @@
+import logo from "../assets/logo2.png";
+
 export default function Footer() {
     return (
         <footer className="bg-slate-950 text-slate-400 py-12 border-t border-slate-900">
@@ -5,10 +7,15 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                     <div className="col-span-1 md:col-span-2">
                         <div className="flex items-center gap-2 mb-4">
-                            <div className="w-6 h-6 bg-blue-600 rounded-md flex items-center justify-center">
-                                <span className="text-white font-bold text-xs">R</span>
+                            <div className="w-10 h-10 rounded-lg overflow-hidden shadow-lg shadow-blue-500/50">
+                                <img src={logo} alt="" srcset="" />
                             </div>
-                            <span className="text-white text-xl font-bold tracking-wider">RESCUDO</span>
+                            <span className="text-white text-2xl font-bold tracking-wider">
+                                RESCUDO
+                            </span>
+                            <span className="text-white text-2xl">
+                                FORTALIX
+                            </span>
                         </div>
                         <p className="max-w-xs">
                             Líderes en seguridad privada integral. Protegemos su patrimonio con tecnología y profesionalismo.
