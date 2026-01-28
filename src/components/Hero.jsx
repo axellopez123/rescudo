@@ -1,75 +1,31 @@
 import React from "react";
-import img1 from '../assets/1.webp'
-import img2 from '../assets/2.jpg'
-
-import img3 from '../assets/3.webp'
-
-import img4 from '../assets/4.jpg'
+import img3 from '../assets/banner.png';
 
 const Hero = () => {
   return (
-    <div className="position-relative">
+    <div className="relative w-full h-full md:h-screen">
+      {/* Imagen de fondo */}
+      <img
+        src={img3}
+        alt="Hero Banner"
+        className="object-cover md:w-full md:h-full"
+      />
 
-      <div
-        id="myCarousel"
-        className="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div className="carousel-inner h-[300px] md:h-[500px]">
+      {/* Overlay oscuro para mejorar contraste */}
+      <div className="absolute inset-0 bg-black/20"></div>
 
-          {/* <div className="carousel-item active" data-bs-interval="1000">
-            <img
-              src={img1}
-              className="d-block w-100 h-100 object-cover"
-              alt="Slide 1"
-            />
-          </div>
-
-          <div className="carousel-item" data-bs-interval="3000">
-            <img
-              src={img2}
-              className="d-block w-100 h-100 object-cover"
-              alt="Slide 2"
-            />
-          </div> */}
-
-          <div className="carousel-item" data-bs-interval="5000">
-            <img
-              src={img3}
-              className="d-block w-100 h-100 object-cover"
-              alt="Slide 3"
-            />
-          </div>
-          <div className="carousel-item" data-bs-interval="5000">
-            <img
-              src={img4}
-              className="d-block w-100 h-100 object-cover"
-              alt="Slide 3"
-            />
-          </div>
-        </div>
-
-        {/* Controles */}
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="prev"
-        >
-          <span className="carousel-control-prev-icon" />
-        </button>
-
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="next"
-        >
-          <span className="carousel-control-next-icon" />
-        </button>
+      {/* Contenedor de texto centrado */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+        {/* <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-lg">
+          Bienvenido a Rescudo Fortalix
+        </h1>
+        <p className="mt-4 text-lg md:text-2xl text-white drop-shadow-md max-w-2xl">
+          Brindamos soluciones de seguridad privada con innovación y confianza.
+        </p> */}
+        {/* <button className="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors">
+          Contáctanos
+        </button> */}
       </div>
-
-
     </div>
   );
 };
