@@ -34,7 +34,7 @@ export default function Footer() {
                 </div>
 
                 <div className="border-t border-slate-900 pt-8 text-sm text-center">
-                    <p>&copy; {new Date().getFullYear()} Rescudo Seguridad Privada. Todos los derechos reservados.</p>
+                    <p>&copy; {new Date().getFullYear()} RESCUDO FORTALIX, S.A. DE C.V. Todos los derechos reservados.</p>
                 </div>
             </div>
         </footer>

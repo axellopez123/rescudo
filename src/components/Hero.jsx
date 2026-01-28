@@ -1,46 +1,77 @@
-import heroImage from '../assets/hero.png'
+import React from "react";
+import img1 from '../assets/1.webp'
+import img2 from '../assets/2.jpg'
 
-export default function Hero() {
-    return (
-        <div id="home" className="relative h-screen min-h-[600px] w-full overflow-hidden">
-            {/* Background Image with Overlay */}
-            <div className="absolute inset-0">
-                <img
-                    src={heroImage}
-                    alt="Security Surveillance"
-                    className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/70 to-transparent"></div>
-            </div>
+import img3 from '../assets/3.webp'
 
-            {/* Content */}
-            <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
-                <div className="max-w-3xl">
-                    <div className="inline-block px-4 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 backdrop-blur-sm mb-6 animate-fade-in-up">
-                        <span className="text-blue-400 font-medium tracking-wide text-sm uppercase">Seguridad Privada Profesional</span>
-                    </div>
+import img4 from '../assets/4.jpg'
 
-                    <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6 animate-allow">
-                        Protección Integral <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
-                            Para Tu Tranquilidad
-                        </span>
-                    </h1>
+const Hero = () => {
+  return (
+    <div className="position-relative">
 
-                    <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl leading-relaxed">
-                        Soluciones de seguridad avanzadas con tecnología de punta y personal altamente capacitado. Protegemos lo que más importa.
-                    </p>
+      <div
+        id="myCarousel"
+        className="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div className="carousel-inner h-[300px] md:h-[500px]">
 
-                    <div className="flex flex-col sm:flex-row gap-4">
-                        <a href="#contact" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg shadow-lg shadow-blue-600/30 transform transition hover:-translate-y-1 text-center">
-                            Solicitar Cotización
-                        </a>
-                        <a href="#services" className="px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 font-bold rounded-lg transition-all text-center">
-                            Nuestros Servicios
-                        </a>
-                    </div>
-                </div>
-            </div>
+          {/* <div className="carousel-item active" data-bs-interval="1000">
+            <img
+              src={img1}
+              className="d-block w-100 h-100 object-cover"
+              alt="Slide 1"
+            />
+          </div>
+
+          <div className="carousel-item" data-bs-interval="3000">
+            <img
+              src={img2}
+              className="d-block w-100 h-100 object-cover"
+              alt="Slide 2"
+            />
+          </div> */}
+
+          <div className="carousel-item" data-bs-interval="5000">
+            <img
+              src={img3}
+              className="d-block w-100 h-100 object-cover"
+              alt="Slide 3"
+            />
+          </div>
+          <div className="carousel-item" data-bs-interval="5000">
+            <img
+              src={img4}
+              className="d-block w-100 h-100 object-cover"
+              alt="Slide 3"
+            />
+          </div>
         </div>
-    )
-}
+
+        {/* Controles */}
+        <button
+          className="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span className="carousel-control-prev-icon" />
+        </button>
+
+        <button
+          className="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span className="carousel-control-next-icon" />
+        </button>
+      </div>
+
+
+    </div>
+  );
+};
+
+export default Hero;

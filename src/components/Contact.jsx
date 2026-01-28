@@ -34,7 +34,7 @@ export default function Contact() {
                                 </div>
                             </div>
 
-                            <div className="flex items-start gap-4">
+                            {/* <div className="flex items-start gap-4">
                                 <div className="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center flex-shrink-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -45,7 +45,7 @@ export default function Contact() {
                                     <h3 className="font-semibold text-white">Ubicación</h3>
                                     <p className="text-gray-400">Av. Reforma 222, CDMX</p>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 

@@ -1,8 +1,11 @@
+import { GiPoliceOfficerHead } from "react-icons/gi";
+
+
 export default function Services() {
     const services = [
         {
-            title: "Guardias de Seguridad",
-            description: "Personal rigurosamente seleccionado y capacitado para control de accesos y vigilancia perimetral.",
+            title: "Vigilancia y Protección Integral",
+            description: "Servicio de seguridad preventiva y reactiva para la protección de personas, bienes e instalaciones, mediante personal altamente capacitado, protocolos operativos certificados y supervisión constante, garantizando entornos seguros en los sectores público y privado.",
             icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -10,21 +13,20 @@ export default function Services() {
             )
         },
         {
-            title: "Monitoreo CCTV",
-            description: "Vigilancia remota 24/7 con sistemas de última generación y respuesta inmediata ante incidentes.",
-            icon: (
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                </svg>
-            )
-        },
-        {
-            title: "Custodia de Bienes",
-            description: "Protección especializada para traslado de valores y mercancías críticas con protocolos de alta seguridad.",
+            title: "Custodia y Traslado Seguro de Valores",
+            description: "Protección especializada para el traslado de valores y bienes de alto riesgo, utilizando unidades, equipo y procedimientos certificados, asegurando puntualidad, confidencialidad y cumplimiento normativo en cada operación.",
             icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
+            )
+        },
+        {
+            title: "Capacitación y Soluciones en Seguridad",
+            description: "Programas de capacitación profesional en materia de seguridad, así como la comercialización, renta y mantenimiento de equipo especializado, diseñados para fortalecer la prevención, eficiencia operativa y respuesta ante riesgos específicos.",
+            icon: (
+    <GiPoliceOfficerHead className="text-3xl" />
+
             )
         }
     ]
