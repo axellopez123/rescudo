@@ -1,4 +1,25 @@
+import { useState } from "react";
+
+
 export default function Contact() {
+
+    const [nombre, setNombre] = useState("");
+    const [correo, setCorreo] = useState("");
+    const [mensaje, setMensaje] = useState("");
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const texto = `Hola, me interesa más información.
+    
+Nombre: ${nombre}
+Correo: ${correo}
+Mensaje: ${mensaje}`;
+
+        const url = `https://wa.me/523320487894?text=${encodeURIComponent(texto)}`;
+
+        window.open(url, "_blank");
+    };
     return (
         <section id="contact" className="py-20 bg-slate-900 text-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -49,21 +70,26 @@ export default function Contact() {
                         </div>
                     </div>
 
-                    <form className="bg-white/5 p-8 rounded-2xl border border-white/10 backdrop-blur-sm">
+                    <form onSubmit={handleSubmit}
+                        className="bg-white/5 p-8 rounded-2xl border border-white/10 backdrop-blur-sm">
                         <div className="grid grid-cols-1 gap-6">
                             <div>
                                 <label className="block text-sm font-medium text-gray-300 mb-2">Nombre</label>
-                                <input type="text" className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-500 transition-all outline-none" placeholder="Tu nombre" />
+                                <input type="text" value={nombre}
+                                    onChange={(e) => setNombre(e.target.value)} className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-500 transition-all outline-none" placeholder="Tu nombre" />
                             </div>
                             <div>
                                 <label className="block text-sm font-medium text-gray-300 mb-2">Correo</label>
-                                <input type="email" className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-500 transition-all outline-none" placeholder="correo@ejemplo.com" />
+                                <input type="email" value={correo}
+                                    onChange={(e) => setCorreo(e.target.value)} className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-500 transition-all outline-none" placeholder="correo@ejemplo.com" />
                             </div>
                             <div>
                                 <label className="block text-sm font-medium text-gray-300 mb-2">Mensaje</label>
-                                <textarea rows="4" className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-500 transition-all outline-none" placeholder="¿En qué podemos ayudarte?"></textarea>
+                                <textarea rows="4" value={mensaje}
+                                    onChange={(e) => setMensaje(e.target.value)} className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-500 transition-all outline-none" placeholder="¿En qué podemos ayudarte?"></textarea>
                             </div>
-                            <button type="button" className="w-full py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-colors cursor-pointer">
+                            <button type="submit"
+                                className="w-full py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-colors cursor-pointer">
                                 Enviar Mensaje
                             </button>
                         </div>
