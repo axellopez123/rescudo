@@ -39,7 +39,7 @@ Mensaje: ${mensaje}`;
                                 </div>
                                 <div>
                                     <h3 className="font-semibold text-white">Teléfono</h3>
-                                    <p className="text-gray-400">+52 (55) 1234-5678</p>
+                                    <p className="text-gray-400">+52 (33) 2048-7894</p>
                                 </div>
                             </div>
 
